@@ -1,44 +1,35 @@
 const Projects = [
   {
-    title: "88 Pixels",
-    year: 2023,
-    description:
-      "A web design studio providing templates and bespoke solutions for your business or personal brand's website",
-    link: "88pixels.co",
-    href: "http://127.0.0.1:5500/index.html",
-  },
-  {
-    title: "Frameplate",
-    year: 2023,
-    description:
-      "A curated gallery of Framer templates built by the community.",
-    link: "frameplate.framer.website",
-    href: "https://frameplate.framer.website/",
-  },
-  {
-    title: "Staredown",
-    year: 2023,
-    description: "An online game to test you colour vision",
-    link: "staredown.netlify.app",
-    href: "https://staredown.netlify.app/",
-  },
-  {
-    title: "New jobs friday",
+    title: "Sudoku",
     year: 2022,
     description:
-      "A weekly newsletter with a round-up of the latest job offers in the UK music industry.",
-    link: "newjobsfriday.com",
-    href: "https://newjobsfriday.com/",
+      "A sudoku game and engine written in Java (100%) and Swing library.",
+    link: "github.com",
+    href: "https://github.com/IssaKass/Sudoku",
   },
   {
-    title: "What to listen to",
-    year: 2022,
-    description:
-      "Discover new lofi tracks to listen to while working, coding, studying or relaxing.",
-    link: "whattolistento.netlify.app",
-    href: "https://whattolistento.netlify.app/",
+    title: "JS Calculator",
+    year: 2023,
+    description: "A neumorphic calculator using HTML, CSS and JS.",
+    link: "github.com",
+    href: "https://github.com/IssaKass/JavaScript_Calculator",
+  },
+  {
+    title: "Dice Roller",
+    year: 2023,
+    description: "A simple dice roller application for Android devices.",
+    link: "github.com",
+    href: "https://github.com/IssaKass/DiceRoller",
   },
 ];
+
+// sorting projects by year, followed by title
+Projects.sort((p1, p2) => {
+  if (p1.year === p2.year) {
+    return p1.title.localeCompare(p2.title);
+  }
+  return p2.year - p1.year;
+});
 
 const ProjectLayout = ({ title, year, description, link, href }) => `
   <h3 class="project__title">

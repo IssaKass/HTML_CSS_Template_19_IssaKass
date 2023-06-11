@@ -18,10 +18,10 @@ const Stacks = [
     href: "https://www.figma.com/",
   },
   {
-    title: "WordPress",
-    description: "Website builder",
-    icon: '<i class="fa-brands fa-wordpress-simple fa-fw"></i>',
-    href: "https://wordpress.com/",
+    title: "CodePen",
+    description: "Front-end community",
+    icon: '<i class="fa-brands fa-codepen fa-fw"></i>',
+    href: "https://codepen.io/",
   },
 ];
 
