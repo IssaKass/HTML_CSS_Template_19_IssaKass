@@ -21,6 +21,13 @@ const Projects = [
     link: "github.com",
     href: "https://github.com/IssaKass/DiceRoller",
   },
+  {
+    title: "JS Password Generator",
+    year: 2023,
+    description: "A simple password generator using HTML, CSS and JS.",
+    link: "github.com",
+    href: "https://issakass.github.io/JS-PasswordGenerator",
+  },
 ];
 
 // sorting projects by year, followed by title
