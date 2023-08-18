@@ -5,5 +5,5 @@
 <br/>
 
 - One-Page Layout
-- Style with pure CSS
+- Styled with pure CSS
 - Fully responsive
